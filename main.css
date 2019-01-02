@@ -1,0 +1,304 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.wrapper, {
+    width: 100%;
+}
+header, nav{
+    width: 80%;
+    margin: auto;
+}
+
+.top-nav .green {
+    color: rgb(27, 112, 6);
+}
+nav#navbar {
+    grid-area: navbar;
+      
+  }
+  .shop {
+      color: #000;
+      padding-left: 25px;
+  }
+  #category{
+      background-color: rgb(27, 112, 6);
+     height: 30px;
+    padding: 5px 0 0 10px;
+    color: #fff;
+  }
+  main#main-doc {
+    grid-area: mainConent;
+  }
+  nav#navbar a {
+    display: block;
+    border: 0.5px solid #ddd;
+    padding: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    
+  }
+  .top-nav {
+    text-align: end;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(206, 201, 201);
+    margin-bottom: 10px;
+  }
+  
+
+  .search {
+    position: relative;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .search input {
+    width: 70%;
+    height: 32px;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  }
+  button {
+      height: 32px;
+      background-color: gold;
+      border: none;
+  }
+  .gold {
+      color: gold;
+      
+  }
+  
+  .search input { text-indent: 32px;}
+  .search .fa-search { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .container {
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
+.products-wrapper {
+    width: 100%;
+}
+.products{
+    width: 90%;
+    margin: auto;
+   
+}
+.products-header {
+    color: #ccc;
+    font-size: 15px;
+    
+}
+.nice{
+    margin-top: 20px;
+}
+.products-one {
+    
+  padding: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(194, 189, 189);
+  z-index: 5;
+    }
+
+.path {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2px;
+  
+}
+.path a {
+    text-decoration: none;
+}
+.btn-cart {
+    width: 90%;
+}
+
+.first-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   margin-top: 50px;
+   margin-bottom: 0;
+    width: 100%;
+    background: rgba(48, 47, 47, 0.973);
+    color: #aaa;
+    padding-top: 50px;
+}
+.footer-one {
+    margin: 10px;
+    align-content: center;
+}
+
+.second-footer {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    margin-top: 0;
+    height: 50px;
+    padding-top: 20px;
+}
+
+ul.social-media li{
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    margin-top: 10px;
+}
+
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    width: 100%;
+    height: 450px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+
